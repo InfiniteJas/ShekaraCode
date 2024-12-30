@@ -1,5 +1,3 @@
-# ShekaraCode
-
 # ShekaraCode 🧠
 
 AI-powered Git analysis tool with intelligent code review. "Code beyond reason" | "Разумный код вне разума"
