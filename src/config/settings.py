@@ -18,11 +18,10 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
-        case_sensitive = False  # Делаем нечувствительным к регистру
+        case_sensitive = False
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        # Удаляем возможные пробелы в значениях
         self.github_token = self.github_token.strip()
         self.repository_name = self.repository_name.strip()
         self.openai_api_key = self.openai_api_key.strip()

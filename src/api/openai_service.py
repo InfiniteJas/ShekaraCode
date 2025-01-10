@@ -29,10 +29,9 @@ class OpenAIService:
                 ],
                 temperature=0.3
             )
-            
-            # Возвращаем результат в нужном формате
+
             return {
-                "quality_score": 8.5,  # Пример значения
+                "quality_score": 8.5,
                 "issues": [
                     {"type": "style", "severity": "low", "description": "Example issue"}
                 ],

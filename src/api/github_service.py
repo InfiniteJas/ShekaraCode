@@ -108,7 +108,7 @@ class GitHubService:
         """Get repository statistics."""
         try:
             logger.info("Fetching repository statistics")
-            repo = self.repo  # This will trigger the property and any potential errors
+            repo = self.repo
             stats = {
                 'name': repo.name,
                 'stars': repo.stargazers_count,
